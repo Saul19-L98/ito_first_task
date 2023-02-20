@@ -63,13 +63,26 @@ span.psw {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 50%;
+    width: 60%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+}
+
+.initial{
+    align-items: center;
+    border: 3px dashed #d3d3d3;
+    color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 31.25rem;
+    width: 60%;
+    padding: 0 1rem;
 }
 
 .card:last-child{
@@ -173,7 +186,7 @@ span.psw {
         align-items: center;
     }
     .card:last-child{
-        width: 60%;
+        width: 75%;
         margin: 3rem 0;
         justify-self: center;
     }

@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import UserSearched from "./UserSearched.jsx";
+import EmptyCard from "./EmptyCard.jsx";
 
 const url = "https://api.github.com";
 
@@ -24,6 +25,7 @@ function Search() {
     e.preventDefault();
     setLoading(true);
     searchUser(user);
+    setUser("");
   };
 
   return (
@@ -49,6 +51,7 @@ function Search() {
             </div>
           </form>
         </div>
+        {userData === null && <EmptyCard />}
         {userData && <UserSearched load={loading} data={userData} />}
       </div>
       <div className="footer" style={{ marginTop: "1rem" }}>

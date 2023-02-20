@@ -36,7 +36,7 @@ function UserSearched({ load, data }) {
               rel="noonponer"
               href={data.html_url}
             >
-              Go to the Github profile
+              Visit profile
             </a>
           </p>
         </div>
